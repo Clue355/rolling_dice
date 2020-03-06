@@ -3,6 +3,7 @@
 body {
     color: chartreuse;
     font-family: 'Montserrat', sans-serif;
+    background-color: black;
 }
 
 hr {
@@ -23,16 +24,23 @@ hr {
     text-align: center;
 }
 
+#rectangle {
+    background-color: black;
+}
+
 /*                class selector           */
 
 .container {
-    padding: 5rem;
+    padding: 6rem;
 }
 
 .btn {
     padding: 1rem 1rem;
 }
 
-/* .class {
-    size: 1px;
-} */
+
+.bar {
+    background-color: chartreuse;
+    height: 15px;
+
+}
