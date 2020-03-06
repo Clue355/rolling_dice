@@ -1,7 +1,11 @@
-let n = 1
 
-let result
-function getRandomInt(n) {
+
+
+
+let result = ''
+
+document.getElementById('button').onclick = function() {
+    let n = document.getElementById("number").Value
     let resultOne
     let resultTwo
     for (let i = 0; i <= n; i++){
@@ -9,12 +13,10 @@ function getRandomInt(n) {
     max = Math.floor(7);
     resultOne = Math.floor(Math.random() * (max - min)) + min;
     resultTwo = Math.floor(Math.random() * (max - min)) + min;
-    
+    result += resultOne + resultTwo
     }
-    result = resultOne + resultTwo
+    
     return result
   }
-  
-  var text = document.createTextNode(result);
-  let output = document.getElementsByClassName("output")
-  output.appendChild(text);
+var t = document.createTextNode(result + '');
+document.getElementById("output").innerHTML = t 
