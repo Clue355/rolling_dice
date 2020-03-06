@@ -17,14 +17,25 @@ document.getElementById('button').onclick = function() {
     result = resultOne + resultTwo
     // result = diceOne + diceTwo
     count[result] = count[result] + 1
+    
     }
     for(let i = 0; i < count.length; i++) {
         let element = document.createElement("div")
         element.className = "bar"
-        element.style.width = count[i] * 2 + "px"
+        // let para = document.createElement("p")
+        // para.className = "count"
+        element.style.width = count[i] * 8 + "px"
+        element.style.color = 'black'
         document.getElementById("rectangle").appendChild(element)
     }
+
+    // for(let i = 0; i < count.length; i++) {
+    // let element = document.createElement("p")
+    // element.className = "count"
+    // let counter  = document.createTextNode(i)
+    // document.getElementsByClassName("count").textContent = counter
+    
+    
     // return (document.getElementById("output").textContent =  count)
     document.getElementById("output").textContent = count
 }
-// console.log(dice(10))
